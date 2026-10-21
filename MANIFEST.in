@@ -1,0 +1,13 @@
+﻿# SplitShiftLab source distribution manifest
+
+# Include research examples and documentation
+recursive-include examples *.py *.md
+
+# Exclude local backup files
+exclude LICENSE_backup.txt
+exclude README_v0.1.0_backup.md
+
+# Exclude locally generated data and outputs
+prune data
+prune out
+prune .venv
