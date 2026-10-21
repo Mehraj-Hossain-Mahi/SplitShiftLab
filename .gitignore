@@ -1,0 +1,55 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Build files
+build/
+dist/
+*.whl
+
+# Research datasets
+data/
+
+# Generated outputs
+out/
+
+# Profiling and coverage
+*.prof
+*.pstats
+.coverage
+htmlcov/
+
+# Secrets and local configurations
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+README_v0.1.0_backup.md
+LICENSE_backup.txt
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
