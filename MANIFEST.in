@@ -11,3 +11,6 @@ exclude README_v0.1.0_backup.md
 prune data
 prune out
 prune .venv
+
+# Citation metadata
+include CITATION.cff

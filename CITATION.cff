@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use SplitShiftLab in your research, please cite this software."
+type: software
+
+title: "SplitShiftLab: Auditable Data Partitioning, Constraint Feasibility, and Distribution-Shift Diagnostics for Machine Learning"
+
+authors:
+  - family-names: "Mahi"
+    given-names: "Mehraj Hossain"
+
+version: "0.1.0"
+
+repository-code: "https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab"
+
+license: "MIT"
+
+keywords:
+  - machine learning
+  - data partitioning
+  - group-disjoint splitting
+  - constraint feasibility
+  - distribution shift
+  - reproducible evaluation
