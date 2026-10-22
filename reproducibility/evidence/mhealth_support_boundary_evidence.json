@@ -1,0 +1,169 @@
+{
+  "3174": {
+    "software_component": "splitshiftlab.protocol_compiler",
+    "stage": "Step 2.21 group and per-class feasibility preflight",
+    "status": "feasible",
+    "supported_mode": "group",
+    "mode": "group",
+    "input_rows": 1215745,
+    "dataset_sha256": "6fef09b2eb693364e5b2377155e6addb2800330bc400b2afb473276a2daf6de5",
+    "specification": {
+      "target": "label",
+      "mode": "group",
+      "group_col": "subject",
+      "time_col": null,
+      "features": null,
+      "test_size": 0.3,
+      "seed": 42,
+      "min_train_rows": 2,
+      "min_test_rows": 2,
+      "min_class_support": 3174,
+      "stratify_random": false
+    },
+    "blockers": [],
+    "unresolved_requirements": [],
+    "certificate": {
+      "validation_group_ids": [
+        "subject_01",
+        "subject_02",
+        "subject_09"
+      ],
+      "training_groups": 7,
+      "validation_groups": 3,
+      "training_rows": 788736,
+      "validation_rows": 427009,
+      "subject_overlap": 0,
+      "source": "exact-k combination search with batched class-support checks after row-feasibility dynamic programming",
+      "guarantees": [
+        "group disjointness",
+        "minimum training rows",
+        "minimum validation rows",
+        "minimum class support on this witness"
+      ],
+      "minimum_class_support": 3174,
+      "per_class_train_counts": {
+        "0": 550601,
+        "1": 21504,
+        "2": 21504,
+        "3": 21504,
+        "4": 21504,
+        "6": 19202,
+        "7": 20174,
+        "8": 19559,
+        "9": 21504,
+        "10": 21504,
+        "11": 21504,
+        "12": 7168,
+        "5": 21504
+      },
+      "per_class_validation_counts": {
+        "0": 321949,
+        "1": 9216,
+        "2": 9216,
+        "3": 9216,
+        "4": 9216,
+        "6": 9113,
+        "7": 9267,
+        "8": 9778,
+        "9": 9216,
+        "10": 9216,
+        "11": 9216,
+        "12": 3174,
+        "5": 9216
+      }
+    },
+    "caution": "A feasibility certificate is not an experiment, model evaluation, or a leakage-free guarantee outside checked constraints.",
+    "total_groups": 10,
+    "required_validation_groups": 3,
+    "required_training_groups": 7,
+    "group_fraction_not_row_fraction": true,
+    "validated_constraints": [
+      "group cardinality",
+      "group disjointness",
+      "minimum row counts",
+      "minimum per-class support in both partitions"
+    ],
+    "feasible_validation_row_count_options": 86,
+    "requested_minimum_class_support": 3174,
+    "class_labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "5"
+    ],
+    "class_support_search_method": "bounded exact combination enumeration",
+    "possible_group_allocations": 120,
+    "class_support_allocations_examined": 7,
+    "class_support_search_exhausted": false
+  },
+  "3175": {
+    "software_component": "splitshiftlab.protocol_compiler",
+    "stage": "Step 2.21 group and per-class feasibility preflight",
+    "status": "infeasible",
+    "supported_mode": "group",
+    "mode": "group",
+    "input_rows": 1215745,
+    "dataset_sha256": "6fef09b2eb693364e5b2377155e6addb2800330bc400b2afb473276a2daf6de5",
+    "specification": {
+      "target": "label",
+      "mode": "group",
+      "group_col": "subject",
+      "time_col": null,
+      "features": null,
+      "test_size": 0.3,
+      "seed": 42,
+      "min_train_rows": 2,
+      "min_test_rows": 2,
+      "min_class_support": 3175,
+      "stratify_random": false
+    },
+    "blockers": [
+      {
+        "code": "NO_VALID_CLASS_SUPPORT_ALLOCATION",
+        "message": "All exact-k whole-group allocations were checked; none satisfies minimum row counts AND minimum support for every class in both partitions."
+      }
+    ],
+    "unresolved_requirements": [],
+    "certificate": null,
+    "caution": "A feasibility certificate is not an experiment, model evaluation, or a leakage-free guarantee outside checked constraints.",
+    "total_groups": 10,
+    "required_validation_groups": 3,
+    "required_training_groups": 7,
+    "group_fraction_not_row_fraction": true,
+    "validated_constraints": [
+      "group cardinality",
+      "group disjointness",
+      "minimum row counts"
+    ],
+    "feasible_validation_row_count_options": 86,
+    "requested_minimum_class_support": 3175,
+    "class_labels": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "5"
+    ],
+    "class_support_search_method": "bounded exact combination enumeration",
+    "possible_group_allocations": 120,
+    "class_support_allocations_examined": 120,
+    "class_support_search_exhausted": true
+  }
+}

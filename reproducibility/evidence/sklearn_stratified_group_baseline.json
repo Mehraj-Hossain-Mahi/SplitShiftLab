@@ -1,0 +1,26 @@
+{
+  "software": "scikit-learn",
+  "version": "1.9.1",
+  "algorithm": "StratifiedGroupKFold",
+  "dataset": "UCI HAR development",
+  "seed_values": 250,
+  "n_splits": 4,
+  "total_folds": 1000,
+  "validation_group_count_distribution": {
+    "5": 750,
+    "6": 250
+  },
+  "exact_six_group_folds": 250,
+  "unique_six_group_allocations": 1,
+  "support_322_successes": 0,
+  "support_323_successes": 0,
+  "best_observed_support": 269,
+  "notes": [
+    "Exploratory stratified group-fold baseline.",
+    "Only folds with six validation groups are compared.",
+    "Other folds are excluded, not counted as failures.",
+    "Repeated folds are not independent samples.",
+    "No protected official UCI HAR test data used.",
+    "No general superiority claim."
+  ]
+}

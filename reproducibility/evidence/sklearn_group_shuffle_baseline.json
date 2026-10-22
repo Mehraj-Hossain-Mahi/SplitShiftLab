@@ -1,0 +1,24 @@
+{
+  "software": "scikit-learn",
+  "version": "1.9.1",
+  "splitter": "GroupShuffleSplit",
+  "dataset": "UCI HAR official development partition",
+  "records": 7352,
+  "subject_groups": 21,
+  "validation_groups": 6,
+  "random_state": 42,
+  "splits_requested": 1000,
+  "unique_allocations_sampled": 990,
+  "group_disjoint": true,
+  "minimum_class_support_required": 322,
+  "allocations_satisfying_322": 0,
+  "allocations_satisfying_323": 0,
+  "best_observed_support": 317,
+  "mean_observed_support": 280.876,
+  "notes": [
+    "Randomized baseline, not an exact feasibility solver.",
+    "Support 322 is a post-hoc development correctness boundary.",
+    "No protected official test data used.",
+    "This is not a general software superiority test."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "study": "Step 2.24 independent exhaustive class-support boundary audit",
+  "development_only": true,
+  "official_test_used": false,
+  "independent_of_splitshiftlab": true,
+  "input_csv": "out\\uci_har\\uci_har_official_train.csv",
+  "development_rows": 7352,
+  "subjects": 21,
+  "class_labels": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "validation_subjects_required": 6,
+  "total_allocations": 54264,
+  "allocations_satisfying_row_minima": 54264,
+  "min_train_rows": 2,
+  "min_validation_rows": 2,
+  "eligible_validation_row_range": [
+    1851,
+    2350
+  ],
+  "max_feasible_minimum_per_class_both_partitions": 322,
+  "immediately_infeasible_per_class_requirement": 323,
+  "allocations_meeting_minimum_20": 54264,
+  "allocations_meeting_maximum_feasible_requirement": 1,
+  "allocations_meeting_immediately_infeasible_requirement": 0,
+  "witness_at_maximum": {
+    "validation_subject_ids": [
+      "subject_01",
+      "subject_03",
+      "subject_23",
+      "subject_25",
+      "subject_26",
+      "subject_30"
+    ],
+    "training_rows": 5108,
+    "validation_rows": 2244,
+    "per_class_train_counts": {
+      "1": 816,
+      "2": 725,
+      "3": 664,
+      "4": 914,
+      "5": 985,
+      "6": 1004
+    },
+    "per_class_validation_counts": {
+      "1": 410,
+      "2": 348,
+      "3": 322,
+      "4": 372,
+      "5": 389,
+      "6": 403
+    },
+    "subject_overlap": 0
+  },
+  "limitations": [
+    "This is an exact reference only for whole-group cardinality, row minima and per-class support.",
+    "The maximum support threshold is derived post hoc from development labels for correctness testing.",
+    "It does not verify timing constraints or establish better predictive performance.",
+    "The protected official UCI HAR test set is not read."
+  ]
+}

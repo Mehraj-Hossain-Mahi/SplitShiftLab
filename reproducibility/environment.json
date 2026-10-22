@@ -1,0 +1,23 @@
+{
+  "study": "SplitShiftLab reproducibility environment",
+  "software_version": "0.1.0",
+  "python_version": "3.14.3",
+  "operating_system": "Windows",
+  "os_release": "11",
+  "architecture": "AMD64",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pytest": "9.1.1"
+  },
+  "git_commit": "dfcb4465faf640da0c10e9ac5e14c23a0cf478f1",
+  "git_branch": "main",
+  "working_tree_has_changes": true,
+  "notes": [
+    "Environment metadata describes the current local environment.",
+    "Benchmarks are hardware-dependent.",
+    "This report does not assert cross-platform performance equivalence."
+  ]
+}

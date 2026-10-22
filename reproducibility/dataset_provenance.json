@@ -1,0 +1,34 @@
+{
+  "study": "SplitShiftLab dataset provenance",
+  "uci_har": {
+    "development_csv": "out/uci_har/uci_har_official_train.csv",
+    "development_csv_sha256": "e2daefd4dad8823dbb4b2a5e112a4279b1f56eab61cf423921460fc08f2cdbcb",
+    "records": 7352,
+    "subjects": 21,
+    "classes": 6,
+    "official_test_not_read_by_this_audit": true
+  },
+  "mhealth": {
+    "prepared_csv": "out/mhealth/mhealth_all_subjects.csv",
+    "prepared_csv_sha256": "70af1aaec2dc0016ff6845e98e44e02f49a13e8b729f1eacb75bfbf5be6f4be0",
+    "records": 1215745,
+    "subjects": 10,
+    "features": 23,
+    "background_retained": true
+  },
+  "original_source_sha256": {
+    "data/uci_har/UCI HAR Dataset/train/X_train.txt": "9c1246099c8d5463779eec5a3845cc3898df9d8c715441ab2a1232d4421fc42f",
+    "data/uci_har/UCI HAR Dataset/train/y_train.txt": "415b3357e2e2d5e70a45c781947c6bdd80e0410a579d862eedcd6bbce3c694ef",
+    "data/uci_har/UCI HAR Dataset/train/subject_train.txt": "66e1e2fbe9b396fa5155f531dc3348c803f503be663e2318772d49947db9153a",
+    "data/mhealth/mHealth_subject1.log": "da8d1bbf644a206886333f945a1dd7fe5081382b3bb3ee42821f08ad765732e4",
+    "data/mhealth/mHealth_subject2.log": "20e288750fe9f4f0495686fabf1500bfe655a549f0d2c3a9be5aa6456461b8f1",
+    "data/mhealth/mHealth_subject3.log": "90ead135c9fa9f1188e3b1f7afc0c95899a0614a15917cf3590f52923d6e03fd",
+    "data/mhealth/mHealth_subject4.log": "3b66f87a292f4cc457aea18cb7e15a10c18055c803df27f5284c6a1c5751a469",
+    "data/mhealth/mHealth_subject5.log": "380e526a85bde64baebd1d1a2478c4cfad947a4ab994c8b39b8dcda195f78a30",
+    "data/mhealth/mHealth_subject6.log": "4b8bc81186229e096937f37f9ae070017ee653005b21f88fcd0504e9195f8926",
+    "data/mhealth/mHealth_subject7.log": "5e372b2fad64a3ebaadd103ec09cde68d448ef5b707b010d02f438b8b9203b1f",
+    "data/mhealth/mHealth_subject8.log": "c6ddb8926be4c193890a28cc84cafe35c16a4bc14f23c3e696d504643652a61b",
+    "data/mhealth/mHealth_subject9.log": "fa68f90a9dfeda47abce41ebc1dec8ce55f66dc56d513ab90a6ae20ad045f2c9",
+    "data/mhealth/mHealth_subject10.log": "382d3d7b58e1fe24679fb241fd7e48ce1992757f6b1b237a56cd660e8f1fabda"
+  }
+}

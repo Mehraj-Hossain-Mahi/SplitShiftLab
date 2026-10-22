@@ -87,22 +87,92 @@ Reports can include:
 
 ## Installation
 
-Clone or obtain the project source and enter the project directory.
+SplitShiftLab v0.1.0 is available as a versioned GitHub release containing a Python wheel and source distribution.
+
+**Release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.0
+
+The repository is currently private. Public access will be enabled before journal submission.
+
+### Option 1: Install from Source (Recommended for Reproducibility)
+
+Clone the repository and enter the project directory:
 
 ```bash
-cd splitshiftlab_mvp
+git clone https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab.git
+cd SplitShiftLab
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+```
+
+Activate the environment.
+
+Windows PowerShell:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+Linux/macOS:
+
+```bash
+source .venv/bin/activate
+```
+
+Install SplitShiftLab and its test dependencies:
+
+```bash
 python -m pip install -e ".[test]"
 ```
 
-Verify the installation:
+### Option 2: Install from the GitHub Release
+
+Download the following file from the v0.1.0 release assets:
+
+`splitshiftlab-0.1.0-py3-none-any.whl`
+
+Navigate to the directory containing the downloaded wheel and install it:
+
+```bash
+python -m pip install ./splitshiftlab-0.1.0-py3-none-any.whl
+```
+
+This installation method does not require cloning the repository.
+
+### Verify the Installation
+
+Check that the Python package can be imported:
+
+```bash
+python -c "import splitshiftlab; print(splitshiftlab.__version__)"
+```
+
+Expected output:
+
+```text
+0.1.0
+```
+
+Run the demonstration:
+
+```bash
+python -m splitshiftlab demo
+```
+
+### Run Automated Tests
+
+When installed from source with test dependencies, execute:
 
 ```bash
 python -m pytest -q
 ```
 
-The current development version has passed 52 automated tests in the project's tested environment.
+The v0.1.0 release passed 52 automated tests in the tested development and GitHub Actions environments.
 
-This does not establish correctness for all possible input datasets or evaluation requirements.
+These tests verify selected software behaviors and do not establish correctness for every possible dataset or evaluation protocol.
 
 ## Quick Start
 
@@ -300,30 +370,37 @@ Generated reports and benchmark artifacts should be retained with the reproducib
 ## Scientific and Technical Limitations
 
 1. **Scoped leakage checks:** Valid partitions do not guarantee the absence of semantic leakage, target-derived features, or preprocessing leakage.
-
 2. **Preflight mode support:** The constrained feasibility preflight currently supports group-based allocation. Equivalent exact feasibility certification is not established for all temporal or mixed constraints.
-
 3. **Search complexity:** Exact group-combination enumeration has combinatorial worst-case growth. Larger configurations may require a search budget and can return `undetermined`.
-
 4. **Class-label dependence:** Minimum class-support constraints depend on target labels. They should not be used to retrospectively optimize a protected final-test partition.
-
 5. **Distribution-shift limitations:** Maximizing approximate MMD² does not guarantee maximal prediction error or establish a statistically significant relationship with generalization difficulty.
-
 6. **Group-size imbalance:** A specified group fraction does not guarantee an equivalent row fraction.
-
 7. **Benchmark scope:** Current correctness and runtime evaluations cover selected real-world and synthetic configurations, not arbitrary datasets or hardware environments.
-
 8. **Privacy:** Dataset fingerprints support integrity checking but do not provide anonymization.
-
 9. **Missing features:** The package does not currently offer a general SAT/MILP protocol compiler, nested cross-validation, a graphical dashboard, or comprehensive leakage detection.
 
 ## Research Software Status
 
-SplitShiftLab is a functional, actively developed research prototype.
+SplitShiftLab is a functional research software prototype, with its initial version (`v0.1.0`) published as a GitHub release.
 
-The project has completed initial automated testing, independent feasibility-boundary validation on UCI HAR and MHEALTH, and preliminary paired performance evaluations.
+The project has completed initial automated testing, independent feasibility-boundary validation using UCI HAR and MHEALTH, and preliminary paired performance evaluations.
 
-Before a formal archived research-software release, remaining work includes comprehensive documentation review, clean-environment installation testing, continuous integration, dependency verification, citation metadata, and a versioned source archive.
+The current release includes:
+
+- A versioned Git tag (`v0.1.0`).
+- Installable Python wheel and source distribution packages.
+- A GitHub Actions continuous integration workflow.
+- 52 automated tests passing in the tested environments.
+- Verified package installation and distribution metadata.
+- Validated software citation metadata (`CITATION.cff`).
+- An MIT open-source license.
+- Research examples and reproducibility scripts.
+
+The GitHub repository is currently private, and a persistent archival DOI has not yet been assigned.
+
+Before journal submission, remaining work includes a comprehensive documentation audit, resolving reproducibility dependencies for benchmark scripts, preserving supporting evaluation artifacts, reviewing scientific claims, and making the audited source repository publicly accessible.
+
+This release represents a tested research prototype rather than a production-certified software platform. The documented feasibility guarantees apply only to supported constraints, datasets, and evaluation protocols.
 
 ## License
 
@@ -331,6 +408,12 @@ Distributed under the MIT License. See `LICENSE` for the complete terms.
 
 ## Citation
 
-Formal citation metadata and a persistent release identifier will be provided after the first archived public software release.
+If you use SplitShiftLab in research, please cite the software using the citation metadata provided in [`CITATION.cff`](CITATION.cff) or GitHub's **Cite this repository** feature.
 
-Until then, do not cite an unassigned DOI or unpublished SoftwareX article.
+**Current software version:** `v0.1.0`
+
+**GitHub release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.0
+
+The software is distributed under the MIT License. The repository is currently private and will be made publicly accessible before journal submission.
+
+A persistent DOI has not yet been assigned to this software release. Do not cite an unassigned DOI or an unpublished SoftwareX article.

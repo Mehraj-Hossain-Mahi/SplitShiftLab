@@ -1,0 +1,18 @@
+{
+  "method": "Independent exhaustive MHEALTH audit",
+  "rows": 1215745,
+  "subjects": 10,
+  "classes": 13,
+  "validation_subjects": 3,
+  "total_allocations": 120,
+  "eligible_allocations": 120,
+  "maximum_feasible_support": 3174,
+  "feasible_allocations_at_3174": 8,
+  "feasible_allocations_at_3175": 0,
+  "witness_validation_subjects": [
+    "subject_01",
+    "subject_02",
+    "subject_09"
+  ],
+  "independent_of_splitshiftlab": true
+}
