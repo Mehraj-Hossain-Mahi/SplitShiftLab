@@ -416,6 +416,17 @@ If you use SplitShiftLab in research, please cite the software using the citatio
 
 **GitHub release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.1
 
+**Archived software version:** `0.1.1`
+
+**Zenodo DOI (version-specific):** https://doi.org/10.5281/zenodo.23556611
+
+**Zenodo Concept DOI (all versions):** https://doi.org/10.5281/zenodo.23556610
+
+**Permanent software archive:** https://zenodo.org/records/23556611
+
+For scientific reproducibility, cite the version-specific DOI corresponding to the software version used in the experiments.
+
+
 The software is distributed under the MIT License. The repository is currently private and will be made publicly accessible before journal submission.
 
 A persistent DOI has not yet been assigned to this software release. Do not cite an unassigned DOI or an unpublished SoftwareX article.

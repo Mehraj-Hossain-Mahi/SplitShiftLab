@@ -9,6 +9,7 @@ authors:
     given-names: "Mehraj Hossain"
 
 version: "0.1.1"
+doi: 10.5281/zenodo.23556611
 
 repository-code: "https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab"
 
