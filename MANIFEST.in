@@ -1,4 +1,4 @@
-﻿# SplitShiftLab source distribution manifest
+# SplitShiftLab source distribution manifest
 
 # Include research examples and documentation
 recursive-include examples *.py *.md
@@ -14,3 +14,4 @@ prune .venv
 
 # Citation metadata
 include CITATION.cff
+recursive-include reproducibility *.md *.json *.csv

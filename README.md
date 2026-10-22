@@ -2,7 +2,7 @@
 
 **Auditable Data Partitioning, Constraint Feasibility, and Distribution-Shift Diagnostics for Machine Learning**
 
-- **Version:** 0.1.0 (development prototype)
+- **Version:** 0.1.1 (research reproducibility release)
 - **Language:** Python
 - **License:** MIT
 - **Status:** Functional research prototype under validation
@@ -87,9 +87,9 @@ Reports can include:
 
 ## Installation
 
-SplitShiftLab v0.1.0 is available as a versioned GitHub release containing a Python wheel and source distribution.
+SplitShiftLab v0.1.1 is available as a versioned GitHub release containing a Python wheel and source distribution.
 
-**Release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.0
+**Release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.1
 
 The repository is currently private. Public access will be enabled before journal submission.
 
@@ -130,14 +130,14 @@ python -m pip install -e ".[test]"
 
 ### Option 2: Install from the GitHub Release
 
-Download the following file from the v0.1.0 release assets:
+Download the following file from the v0.1.1 release assets:
 
-`splitshiftlab-0.1.0-py3-none-any.whl`
+`splitshiftlab-0.1.1-py3-none-any.whl`
 
 Navigate to the directory containing the downloaded wheel and install it:
 
 ```bash
-python -m pip install ./splitshiftlab-0.1.0-py3-none-any.whl
+python -m pip install ./splitshiftlab-0.1.1-py3-none-any.whl
 ```
 
 This installation method does not require cloning the repository.
@@ -410,9 +410,11 @@ Distributed under the MIT License. See `LICENSE` for the complete terms.
 
 If you use SplitShiftLab in research, please cite the software using the citation metadata provided in [`CITATION.cff`](CITATION.cff) or GitHub's **Cite this repository** feature.
 
-**Current software version:** `v0.1.0`
+**Current software version:** `v0.1.1`
 
-**GitHub release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.0
+**Initial software release:** `v0.1.0`
+
+**GitHub release:** https://github.com/Mehraj-Hossain-Mahi/SplitShiftLab/releases/tag/v0.1.1
 
 The software is distributed under the MIT License. The repository is currently private and will be made publicly accessible before journal submission.
 
